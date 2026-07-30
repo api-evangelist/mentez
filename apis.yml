@@ -1,4 +1,16 @@
 aid: mentez
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mentez.png
 name: Mentez
 description: 'Mentez is a company surfaced as a portfolio company of insight-partners and added to the
   API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
@@ -12,7 +24,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
@@ -24,4 +36,17 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.mentez.com/
+  url: https://mentez.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  notes: >-
+    Enrichment pass completed. No API surface found. The original Mentez (Insight
+    Partners portfolio, Latin American social gaming) is defunct; mentez.com now
+    serves a Brazilian (pt-BR) WordPress gaming-news/reviews site. Every probed
+    path (/openapi.json, /api, all /.well-known/*, /llms.txt) returns a soft-200
+    HTML shell (catch-all SPA), not real artifacts. No developer subdomains
+    (api./developer./docs./dev.) resolve. No OpenAPI, SDKs, packages, MCP, or
+    webhooks to derive from. Nothing to enrich.
